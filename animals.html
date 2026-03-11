@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#45cf17",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#152111",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<title>Animales de China - Especies Originarias</title>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Navigation Bar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/10 px-6 md:px-20 py-4 bg-white dark:bg-background-dark/50 backdrop-blur-md sticky top-0 z-50">
+<div class="flex items-center gap-3 text-slate-900 dark:text-slate-100">
+<div class="flex items-center justify-center p-2 rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined">pets</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-tight">Fauna de China</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Inicio</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Especies</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Conservación</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#">Hábitats</a>
+</nav>
+<button class="flex cursor-pointer items-center justify-center rounded-lg h-10 w-10 bg-primary/10 text-primary hover:bg-primary/20 transition-all">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="flex-1 max-w-5xl mx-auto w-full px-6 py-12">
+<!-- Hero Title Section -->
+<div class="flex flex-col gap-4 mb-12">
+<div class="flex items-center gap-2 text-primary">
+<span class="h-1 w-12 bg-primary rounded-full"></span>
+<span class="text-sm font-bold uppercase tracking-widest">Descubrimiento</span>
+</div>
+<h1 class="text-4xl md:text-5xl font-black leading-tight tracking-tight text-slate-900 dark:text-white">
+                    Animales Originarios
+                </h1>
+<p class="max-w-2xl text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+                    Explora las especies más emblemáticas y fascinantes que habitan los diversos ecosistemas de la vasta geografía china.
+                </p>
+</div>
+<!-- Content Cards -->
+<div class="grid gap-8">
+<!-- Giant Panda Card -->
+<div class="group flex flex-col items-stretch justify-start rounded-xl overflow-hidden md:flex-row shadow-sm hover:shadow-xl transition-shadow duration-300 bg-white dark:bg-slate-900/50 border border-slate-100 dark:border-slate-800">
+<div class="w-full md:w-1/3 aspect-[4/3] md:aspect-auto overflow-hidden">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover transform group-hover:scale-105 transition-transform duration-500" data-alt="Un panda gigante comiendo ramas de bambú verde" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDqMudlSU9AAkD9AFgVyWhoAGrxkHAKlvs8mtXuNYeoIMGWdX1Mg3ZS5Yg18ufXJvK29fUDIpQ-7_s-ee0OlsblkLvTgFv_caSVaGsAyGylvkoQqQ5aGtSkJvFG2jN52NzuR5BFbRohH2gAHjH8SyjHGu37jwmC8i2E-axfZIkp0SS-BVQBtZOiEp_AsOsHTcc0ptX5grmW_EbPb__SHc8Q01kQdPoke2HQR0pp4quwBQw9caH9krS5Rtiib_C7hmjy_IQ6wKRcJ4dZ");'>
+</div>
+</div>
+<div class="flex flex-1 flex-col justify-between p-6 md:p-8">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full uppercase tracking-tighter">Vulnerable</span>
+<span class="material-symbols-outlined text-slate-300">favorite</span>
+</div>
+<h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Panda Gigante</h3>
+<div class="space-y-3">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1">info</span>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+<strong class="text-slate-900 dark:text-slate-200">Hábitat:</strong> Montañas del centro de China, principalmente en Sichuan.
+                                    </p>
+</div>
+<div class="flex flex-col gap-2 p-4 rounded-lg bg-background-light dark:bg-slate-800/50">
+<p class="text-xs font-bold uppercase text-primary tracking-wider">Datos Curiosos</p>
+<ul class="text-sm text-slate-600 dark:text-slate-400 space-y-1 list-disc list-inside">
+<li>Pasan hasta 14 horas al día comiendo bambú.</li>
+<li>Poseen un "sexto dedo" (hueso de la muñeca) para agarrar tallos.</li>
+<li>Son excelentes trepadores de árboles y nadadores.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="mt-6 flex justify-end">
+<button class="flex items-center gap-2 px-6 py-2 bg-primary hover:bg-primary/90 text-white rounded-lg font-bold text-sm transition-all shadow-md shadow-primary/20">
+                                Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Snow Leopard Card -->
+<div class="group flex flex-col items-stretch justify-start rounded-xl overflow-hidden md:flex-row shadow-sm hover:shadow-xl transition-shadow duration-300 bg-white dark:bg-slate-900/50 border border-slate-100 dark:border-slate-800">
+<div class="w-full md:w-1/3 aspect-[4/3] md:aspect-auto overflow-hidden">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover transform group-hover:scale-105 transition-transform duration-500" data-alt="Leopardo de las nieves en las montañas rocosas nevadas" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAG8GOnCgIu9fcVi6yxv6brubSRfNUcYXgFv173mCAXzilE-C7TNc-yNXFqgEub_wSBNb1Kd-iGosOcTcqWHkZ1EUpSqFpLPz5MmYtbbGGh4vPk40uTWTJ2VwBeQJOi4aV_H7-AGZDCuxyhDBWz2oMXr849WMla6hTridYG4DXpOyyJG7V9WZCtQcEfXGPrhrqUye4y5kSHxF8ZLylKfIudtN_fmoHe47itLA-lzHKLix1miGfrUGLVSCc_K73y56iLMb6YmY_0x7ow");'>
+</div>
+</div>
+<div class="flex flex-1 flex-col justify-between p-6 md:p-8">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full uppercase tracking-tighter">Amenazado</span>
+<span class="material-symbols-outlined text-slate-300">favorite</span>
+</div>
+<h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Leopardo de las Nieves</h3>
+<div class="space-y-3">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1">info</span>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+<strong class="text-slate-900 dark:text-slate-200">Hábitat:</strong> Cordilleras del Himalaya y meseta tibetana.
+                                    </p>
+</div>
+<div class="flex flex-col gap-2 p-4 rounded-lg bg-background-light dark:bg-slate-800/50">
+<p class="text-xs font-bold uppercase text-primary tracking-wider">Datos Curiosos</p>
+<ul class="text-sm text-slate-600 dark:text-slate-400 space-y-1 list-disc list-inside">
+<li>Conocido como el "fantasma de las montañas" por su sigilo.</li>
+<li>Su cola mide casi lo mismo que su cuerpo para equilibrio y abrigo.</li>
+<li>A diferencia de otros grandes felinos, no pueden rugir.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="mt-6 flex justify-end">
+<button class="flex items-center gap-2 px-6 py-2 bg-primary hover:bg-primary/90 text-white rounded-lg font-bold text-sm transition-all shadow-md shadow-primary/20">
+                                Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Golden Snub-nosed Monkey Card -->
+<div class="group flex flex-col items-stretch justify-start rounded-xl overflow-hidden md:flex-row shadow-sm hover:shadow-xl transition-shadow duration-300 bg-white dark:bg-slate-900/50 border border-slate-100 dark:border-slate-800">
+<div class="w-full md:w-1/3 aspect-[4/3] md:aspect-auto overflow-hidden">
+<div class="w-full h-full bg-center bg-no-repeat bg-cover transform group-hover:scale-105 transition-transform duration-500" data-alt="Mono dorado de nariz chata mirando hacia un lado con pelaje naranja" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDWe1APAXh3T7YC5kDUuwXb6PBX0d7poyAqS8Cx-GKNTAx_Kd1apVgpa8l1Kgo4TlHqWInr5ITVkIqGOgKqlzIf5xRQXmHMclQJbBLLHfN05pPMVZ2kxvnzAwSeKnmtTDGCeDU8j-WK8DVJYciT4jHDKFFAgH0a2hdvPc0eZ21qqv0145Xp7W-EGYOMnny53xcSbaWRBk2764OZCoWoVxzw15AOAT_hGiIn-cz7jUatAcVd1hQBFPB7ZASgVo8TYcDKD0gXPRz7pWX1");'>
+</div>
+</div>
+<div class="flex flex-1 flex-col justify-between p-6 md:p-8">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full uppercase tracking-tighter">Raro</span>
+<span class="material-symbols-outlined text-slate-300">favorite</span>
+</div>
+<h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Mono Dorado de Nariz Chata</h3>
+<div class="space-y-3">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-sm mt-1">info</span>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+<strong class="text-slate-900 dark:text-slate-200">Hábitat:</strong> Bosques de coníferas templados del centro y suroeste.
+                                    </p>
+</div>
+<div class="flex flex-col gap-2 p-4 rounded-lg bg-background-light dark:bg-slate-800/50">
+<p class="text-xs font-bold uppercase text-primary tracking-wider">Datos Curiosos</p>
+<ul class="text-sm text-slate-600 dark:text-slate-400 space-y-1 list-disc list-inside">
+<li>Son los primates más resistentes al frío extremo fuera del hombre.</li>
+<li>Su cara suele tener un tono azulado distintivo.</li>
+<li>Se comunican mediante sonidos muy complejos, similares a silbidos.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="mt-6 flex justify-end">
+<button class="flex items-center gap-2 px-6 py-2 bg-primary hover:bg-primary/90 text-white rounded-lg font-bold text-sm transition-all shadow-md shadow-primary/20">
+                                Saber más <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-white dark:bg-background-dark border-t border-primary/10 mt-12 py-10">
+<div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">eco</span>
+<span class="font-bold text-slate-900 dark:text-white">Animales de China © 2024</span>
+</div>
+<div class="flex gap-6">
+<a class="text-slate-500 hover:text-primary transition-colors text-sm" href="#">Privacidad</a>
+<a class="text-slate-500 hover:text-primary transition-colors text-sm" href="#">Términos</a>
+<a class="text-slate-500 hover:text-primary transition-colors text-sm" href="#">Contacto</a>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary">language</span>
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary">share</span>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>

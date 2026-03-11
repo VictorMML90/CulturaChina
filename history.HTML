@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#45cf17",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#152111",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Lexend', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Navigation Bar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/20 px-6 py-4 lg:px-20 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined text-3xl">temple_buddhist</span>
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold leading-tight tracking-tight">Cultura China</h2>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">Inicio</a>
+<a class="text-primary text-sm font-bold border-b-2 border-primary" href="#">Historia</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">Filosofía</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="#">Arte</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden sm:flex items-center bg-primary/10 rounded-lg px-3 py-1.5 border border-primary/20">
+<span class="material-symbols-outlined text-primary text-xl">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-sm w-32 lg:w-48 placeholder:text-slate-400" placeholder="Buscar historia..." type="text"/>
+</div>
+<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-primary text-white hover:bg-primary/90 transition-colors">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</header>
+<main class="flex-1 px-6 lg:px-40 py-10 max-w-[1440px] mx-auto w-full">
+<!-- Hero Section -->
+<div class="mb-12">
+<div class="flex flex-col gap-4">
+<nav class="flex items-center gap-2 text-primary text-sm font-medium mb-2">
+<a class="hover:underline" href="#">Home</a>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span>Historia y Filosofía</span>
+</nav>
+<h1 class="text-slate-900 dark:text-slate-100 text-4xl lg:text-5xl font-black leading-tight tracking-tight">Historia y Filosofía</h1>
+<p class="text-slate-600 dark:text-slate-400 text-lg max-w-2xl">
+                            Explora las raíces milenarias y los pensamientos que forjaron una de las civilizaciones más influyentes del mundo, desde sus primeras dinastías hasta sus pilares morales.
+                        </p>
+</div>
+</div>
+<!-- Dinastías Antiguas -->
+<section class="mb-16">
+<div class="flex items-center gap-3 mb-8">
+<span class="material-symbols-outlined text-primary text-3xl">castle</span>
+<h2 class="text-slate-900 dark:text-slate-100 text-2xl font-bold">Dinastías Antiguas</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="group flex flex-col gap-4 rounded-xl border border-primary/10 bg-white dark:bg-slate-900/50 p-6 shadow-sm hover:shadow-md hover:border-primary/30 transition-all">
+<div class="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">architecture</span>
+</div>
+<div>
+<h3 class="text-slate-900 dark:text-slate-100 text-lg font-bold mb-2">Dinastía Qin (221–206 a.C.)</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                                    Conocida por la unificación de China bajo el primer emperador, Qin Shi Huang, y el inicio de la Gran Muralla.
+                                </p>
+</div>
+<img class="w-full h-32 object-cover rounded-lg mt-2 grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="The Great Wall of China mountain landscape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2dGV8edKNDS1ltJbCBajPOYxeDGOvXic02bfVqezosUxsvuWLcsshlMZxjqXveepnx91GQtr-ytV6q-zWcgPDPriWr3d_a583EypViR3fceOVPtNhS5B0oGM0T2YfAvhrX7WaHAvw0NISmZLkqAPVWKGCnQz-BVA1_Cy4_mt85KBINZ-BeKhBANPbCIBhIHhbrf6z30meqbxNDq6-Uf_UXW6GTIM1-rK05RpCZEvGhPjtedvkigb_xnrN6iXmwGIToVn-7lb8YSKY"/>
+</div>
+<div class="group flex flex-col gap-4 rounded-xl border border-primary/10 bg-white dark:bg-slate-900/50 p-6 shadow-sm hover:shadow-md hover:border-primary/30 transition-all">
+<div class="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">menu_book</span>
+</div>
+<div>
+<h3 class="text-slate-900 dark:text-slate-100 text-lg font-bold mb-2">Dinastía Han (206 a.C.–220 d.C.)</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                                    La era dorada de la cultura china, donde se estableció la Ruta de la Seda y se consolidó el confucianismo.
+                                </p>
+</div>
+<img class="w-full h-32 object-cover rounded-lg mt-2 grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Traditional Chinese scroll with calligraphy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB07YbVkeT1obSGH1Dgw4VwgwSqq1_U2RU7J_Ktq0-m1WeGzh3MY_JFBD2CNg7S1_kjgVzAIjuWxf-s3cU4RJxIiaL4FRTS3gT7N4Oo23hjNTSlg02z259IAGSgzkhP0vvvBhGCey6xA2oAQG4fmnKwgECO811TwYN1y6Ifja97670l0soX6KcoontP1XbaAou9Ql0500UOZ5pXQ4tVILaKU2sEH5wYqX_rXuM0dZWYFrhfWKCGYBlm4dib1Zw9I4omEIwxfu-bIYZf"/>
+</div>
+<div class="group flex flex-col gap-4 rounded-xl border border-primary/10 bg-white dark:bg-slate-900/50 p-6 shadow-sm hover:shadow-md hover:border-primary/30 transition-all">
+<div class="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-2xl">local_florist</span>
+</div>
+<div>
+<h3 class="text-slate-900 dark:text-slate-100 text-lg font-bold mb-2">Dinastía Tang (618–907 d.C.)</h3>
+<p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                                    El apogeo de la poesía, las artes y la expansión del budismo, marcando un hito en el cosmopolitismo asiático.
+                                </p>
+</div>
+<img class="w-full h-32 object-cover rounded-lg mt-2 grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Traditional Chinese temple architecture landscape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQXQWcm6LGESwNHDxXNMcIjl9Bb3_AJ-hfflEDHsHWOPWxzGiVzNt7x45HWVG1xg-zggk96hQ2zOlhrG3GYxjLXnOCT-NZM1Wf4Et40obLXzugjIK_96gNFeF_fP3a9fMzSqxzetBwvfzprffIZ5xfn8uDUXTcQWBQb5Lc7q5Ky8W-TWv45kuBpLtHBaZ_whSIeTAo7X7UMNfmb2Q1Abyh3SAlmAWoibbhUBsPYH-AKLxKOiSpGRdSIm5HGmbQtvsIeBQtKoYi_1Y3"/>
+</div>
+</div>
+</section>
+<!-- Filosofía y Valores -->
+<section class="mb-16">
+<div class="flex items-center gap-3 mb-8">
+<span class="material-symbols-outlined text-primary text-3xl">psychology</span>
+<h2 class="text-slate-900 dark:text-slate-100 text-2xl font-bold">Filosofía y Valores</h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<!-- Confucianismo -->
+<div class="bg-white dark:bg-slate-900/30 rounded-2xl p-8 border border-primary/5">
+<div class="flex items-start gap-4 mb-6">
+<span class="material-symbols-outlined text-4xl text-primary">groups</span>
+<div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">Confucianismo y Familia</h3>
+<p class="text-primary font-medium text-sm">Respeto y Jerarquía</p>
+</div>
+</div>
+<p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                                El concepto de <strong>Piedad Filial (Xiào)</strong> es el núcleo de la sociedad china. Se basa en el respeto absoluto a los padres, ancestros y superiores. Confucio enseñó que una sociedad armoniosa comienza con familias fuertes y éticas.
+                            </p>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-primary/5 p-4 rounded-lg border-l-4 border-primary">
+<span class="block font-bold text-slate-900 dark:text-slate-100 text-sm mb-1">Ren</span>
+<span class="text-xs text-slate-500">Humanidad y Benevolencia</span>
+</div>
+<div class="bg-primary/5 p-4 rounded-lg border-l-4 border-primary">
+<span class="block font-bold text-slate-900 dark:text-slate-100 text-sm mb-1">Li</span>
+<span class="text-xs text-slate-500">Rituales y Normas Sociales</span>
+</div>
+</div>
+</div>
+<!-- Taoísmo -->
+<div class="bg-white dark:bg-slate-900/30 rounded-2xl p-8 border border-primary/5">
+<div class="flex items-start gap-4 mb-6">
+<span class="material-symbols-outlined text-4xl text-primary">nature</span>
+<div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-slate-100">Taoísmo y Armonía</h3>
+<p class="text-primary font-medium text-sm">Fluidez y Naturaleza</p>
+</div>
+</div>
+<p class="text-slate-600 dark:text-slate-400 mb-6 leading-relaxed">
+                                Fundado por Lao-Tse, el Taoísmo propone vivir en armonía con el <strong>Tao (El Camino)</strong>. Promueve la simplicidad, la humildad y el concepto de <em>Wu-wei</em> (acción sin esfuerzo), permitiendo que las cosas sigan su curso natural.
+                            </p>
+<div class="flex gap-4">
+<div class="flex-1 bg-background-light dark:bg-slate-800 p-4 rounded-xl flex items-center justify-center gap-2">
+<div class="w-4 h-4 rounded-full bg-slate-900"></div>
+<span class="text-sm font-bold">Yin</span>
+</div>
+<div class="flex-1 bg-background-light dark:bg-slate-800 p-4 rounded-xl flex items-center justify-center gap-2">
+<div class="w-4 h-4 rounded-full bg-white border border-slate-300"></div>
+<span class="text-sm font-bold">Yang</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer / CTA -->
+<div class="flex flex-col sm:flex-row items-center justify-between p-8 rounded-2xl bg-primary/10 border border-primary/20 gap-6">
+<div>
+<h3 class="text-xl font-bold text-slate-900 dark:text-slate-100 mb-1">¿Quieres aprender más sobre el arte chino?</h3>
+<p class="text-slate-600 dark:text-slate-400">Descubre nuestra sección dedicada a la caligrafía y pintura tradicional.</p>
+</div>
+<div class="flex gap-4 w-full sm:w-auto">
+<button class="flex-1 sm:flex-none flex items-center justify-center gap-2 bg-primary text-white font-bold py-3 px-8 rounded-lg hover:bg-primary/90 transition-all">
+                            Ir a Arte
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="flex-1 sm:flex-none flex items-center justify-center gap-2 border-2 border-primary text-primary font-bold py-3 px-8 rounded-lg hover:bg-primary/10 transition-all">
+                            Volver al Inicio
+                        </button>
+</div>
+</div>
+</main>
+<footer class="border-t border-primary/10 bg-white dark:bg-background-dark py-12 px-6 lg:px-40 mt-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 text-primary mb-6">
+<span class="material-symbols-outlined">temple_buddhist</span>
+<span class="font-bold text-xl">Cultura China</span>
+</div>
+<p class="text-slate-500 text-sm leading-relaxed">
+                            Dedicados a difundir la riqueza histórica y filosófica de la civilización china para el mundo hispanohablante.
+                        </p>
+</div>
+<div>
+<h4 class="font-bold mb-4 text-slate-900 dark:text-slate-100">Secciones</h4>
+<ul class="space-y-2 text-sm text-slate-500">
+<li><a class="hover:text-primary" href="#">Dinastías</a></li>
+<li><a class="hover:text-primary" href="#">Filosofía</a></li>
+<li><a class="hover:text-primary" href="#">Sociedad</a></li>
+<li><a class="hover:text-primary" href="#">Geografía</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4 text-slate-900 dark:text-slate-100">Recursos</h4>
+<ul class="space-y-2 text-sm text-slate-500">
+<li><a class="hover:text-primary" href="#">Libros recomendados</a></li>
+<li><a class="hover:text-primary" href="#">Museos virtuales</a></li>
+<li><a class="hover:text-primary" href="#">Cursos de Mandarín</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4 text-slate-900 dark:text-slate-100">Contacto</h4>
+<div class="flex gap-4 mb-4">
+<a class="text-primary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="text-primary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">mail</span></a>
+<a class="text-primary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">public</span></a>
+</div>
+<p class="text-xs text-slate-400">© 2024 Cultura China - Todos los derechos reservados.</p>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>

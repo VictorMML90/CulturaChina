@@ -1,9 +1,9 @@
 # CulturaChina
 ## Integrantes
-Madrid Lugo Victor Manuel - 22211602
-García Guerrero César Ricardo - 22211567
-Suárez Sandoval Alejandro - 22211664
-Aguayo Virgen Brisa Julianna - 22211514
+- Aguayo Virgen Brisa Julianna - 22211514
+- García Guerrero César Ricardo - 22211567
+- Madrid Lugo Victor Manuel - 22211602
+- Suárez Sandoval Alejandro - 22211664
 
 ---
 

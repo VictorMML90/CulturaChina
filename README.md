@@ -21,9 +21,9 @@ Estas pruebas permiten identificar problemas de accesibilidad y mejorar la exper
 Se diseñó un prototipo de la interfaz de la aplicación web utilizando **Figma**, con el objetivo de planificar la estructura visual y la experiencia del usuario antes del desarrollo.
 
 
-### Captura del prototipo
+### Enlace del prototipo de interfaz
 
-![Prototipo en Figma](imagenes/prototipo.png)
+[Ver prototipo en Figma](https://www.figma.com/design/96X9wboQUgFccgWrBluFke/Untitled)
 
 ---
 
@@ -32,10 +32,6 @@ Se diseñó un prototipo de la interfaz de la aplicación web utilizando **Figma
 El prototipo fue compartido en la nube para permitir su visualización y recibir retroalimentación.
 
 🔗 **Enlace al prototipo:**  
-https://victormml90.github.io/CulturaChina/
+[Ver prototipo en la nube](https://victormml90.github.io/CulturaChina/)
 
 
-
-- Compartir el diseño con otros usuarios
-- Gestionar versiones del prototipo
-- Recibir comentarios y sugerencias para mejorar la interfaz.

@@ -1,4 +1,13 @@
 # CulturaChina
+## Integrantes
+Madrid Lugo Victor Manuel - 22211602
+García Guerrero César Ricardo - 22211567
+Suárez Sandoval Alejandro - 22211664
+Aguayo Virgen Brisa Julianna - 22211514
+
+---
+
+
 ## Validación de Accesibilidad
 
 Se realizó la validación de accesibilidad del sitio web utilizando herramientas como **Lighthouse** para analizar aspectos como:

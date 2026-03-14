@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#45cf17",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#152111",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 transition-colors duration-300">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- Navigation Bar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-primary/10 px-6 py-4 lg:px-20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md sticky top-0 z-50">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-primary">
+<span class="material-symbols-outlined text-3xl">temple_buddhist</span>
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold leading-tight tracking-tight">Cultura China</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="index.html">Inicio</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="history.html">Historia</a>
+<a class="text-primary text-sm font-bold border-b-2 border-primary" href="traditions.html">Tradiciones</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="animals.html">Animales</a>
+<a class="text-slate-700 dark:text-slate-300 text-sm font-medium hover:text-primary transition-colors" href="funfacts.html">Curiosidades</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+
+</header>
+<main class="flex-1 max-w-7xl mx-auto w-full px-6 md:px-20 py-10">
+<!-- Hero Section -->
+<div class="flex flex-col md:flex-row justify-between items-end gap-6 mb-12">
+<div class="max-w-2xl">
+<h1 class="text-slate-900 dark:text-slate-100 text-5xl font-black leading-tight tracking-tight mb-4">Costumbres y Tradiciones</h1>
+<p class="text-slate-600 dark:text-slate-400 text-lg">Explora la milenaria herencia, los rituales sagrados y el vibrante legado cultural que define a la civilización china.</p>
+</div>
+</div>
+<!-- Featured Section: Chinese New Year -->
+<section class="mb-16">
+<div class="relative group overflow-hidden rounded-2xl aspect-[21/9] bg-slate-200">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Traditional Chinese New Year celebration with lanterns and fireworks" style="background-image: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('https://lh3.googleusercontent.com/aida-public/AB6AXuCqAZ3Hip_Qeo4cBzzgwKPPUfnSsAFQCoYieFpPRsS3EtIbLVorGzyzhFhyNpYxy-wFxQ92L_ezeGNgjmurgyeOcOth1ZAEBh8kAg0xj6xPmVPK0qh-zSUj1kpPxT_tSWi0QL0dlF8o3L5GiJFWTkNy82tA5lEMVoH0A-G16_Aic7nkNZpcbrbcw2f_UFKjz_l1MzhBNILDcnEld0OTqfMRim006E7sW3FrcVqJNkBTXp1rSCtTYcvEvXjmI55emv7IpuSsjF8sK8-f');">
+</div>
+<div class="absolute bottom-0 left-0 p-8 md:p-12 w-full">
+<span class="inline-block px-4 py-1 bg-primary text-white text-sm font-bold rounded-full mb-4">MÁS DESTACADO</span>
+<h2 class="text-white text-4xl md:text-5xl font-extrabold mb-4">Año Nuevo Chino (春节)</h2>
+<p class="text-slate-200 text-lg max-w-2xl mb-6">El Festival de la Primavera es la festividad más importante de China, marcando el inicio del calendario lunar con reuniones familiares, banquetes y deseos de prosperidad.</p>
+
+</div>
+</div>
+</section>
+
+<!-- Right Column: Traditional Festivals (Grid Cards) -->
+<div class="lg:col-span-2">
+<h3 class="text-2xl font-bold flex items-center gap-2 border-l-4 border-primary pl-4 mb-6">Festivales Tradicionales</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Festival 1 -->
+<div class="group relative h-80 overflow-hidden rounded-xl bg-slate-200">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Mid-Autumn festival with mooncakes and big moon" style="background-image: linear-gradient(to top, rgba(0,0,0,0.7), transparent), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDj5_XLFRCjRq2bgFeEEyEAyly6yvynnccmxMW353h1WEDP8WVFBaGA-QjdC2GmYe02uiWj_ntsZwUA7JNRmd_h4WlIwKktOaGPDuZa48ypy0rOHw-pDkSJalvQlcnJcYZ0broqZruJmMydrZxb7vH6qRmw--mxcWHzQ29dAkMb99LsOmyeavx7njVE1rUE-3xLTc_V4yAk6KTq4V8j68yASJUgc4IgNQ-3vpqFxQPqtqn_dMg-e6v1lj6jdOZG6VeweNYdlloxnR24');">
+</div>
+<div class="absolute bottom-0 p-6">
+<div class="transition-all duration-300 group-hover:-translate-y-4">
+<h5 class="text-white text-xl font-bold mb-1">Festival del Medio Otoño</h5>
+<p class="text-slate-200 text-xs mb-4">Celebrando la luna llena y la reunión familiar con pasteles de luna.</p>
+</div>
+<p class="text-white text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300">Se celebra cuando la luna está más llena y brillante, normalmente en septiembre u octubre, y las familias se reúnen para comer pasteles de luna y admirar la luna. 🌕</p>
+</div>
+
+</div>
+<!-- Festival 2 -->
+<div class="group relative h-80 overflow-hidden rounded-xl bg-slate-200">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Dragon boat racing on a river" style="background-image: linear-gradient(to top, rgba(0,0,0,0.7), transparent), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDHAwyJz7KC0ZtigcUhxzW7e4uQHZPUyt1uFrKE3ZprPG0QJbd5SRq_x7yb4lAXAoAbNySajoh7OqXvazZqg1VFgfW1Q3x9PQI6HmXvTk47I9fR-sUmJrP3WJPkXPxqCb7179MkcFr1t-y1HphmA16dLzKB2XpqG6jt2rvuutBS4iykx-ig-oNB6FxagzSOJKi_k8YgSPJk-WnzEuujeCl-G71E2422KnlZhYcfPQIq7XBD7A73FUBeSqxKis2mkeLUjr2oaqgjQgvR');">
+</div>
+<div class="absolute bottom-0 p-6">
+<div class="transition-all duration-300 group-hover:-translate-y-4">
+<h5 class="text-white text-xl font-bold mb-1">Festival del Bote Dragón</h5>
+<p class="text-slate-200 text-xs mb-4">Carreras emocionantes y zongzi para conmemorar a Qu Yuan.</p>
+</div>
+<p class="text-white text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300">Festividad tradicional china que recuerda al poeta Qu Yuan, quien es honrado con carreras de botes con forma de dragón en ríos y lagos. Durante el festival también se preparan zongzi, unos tamales de arroz envueltos en hojas de bambú, que forman parte de la tradición. 🐉</p>
+</div>
+
+</div>
+<!-- Festival 3 -->
+<div class="group relative h-80 overflow-hidden rounded-xl bg-slate-200">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Beautiful floating lanterns at night" style="background-image: linear-gradient(to top, rgba(0,0,0,0.7), transparent), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDUzGO42YpLlsQmeZpxoghYhP41zddJ1O43u0qCSwPxhsK57fqEwc_NqWOjEucIjPKFyL5yzGdeCy3kmAhrh2XHKNX_UQNUo6Zer8hn7kMnnQ-jKzncTvXqD6mMDMv7JBlfbOcUaNRDs6z0QLYrKfgScpSk6zpo91k8VH-7FZpbC9TyNaLXkT6BMx9XlYISqoj9FMORGa_2UC29ZRmOQXbDQgFfxVUrK-KbhgqmdfP0LQ8fH7wqarjxwDbBgBuHrQLpGa-X5J6lsx6G');">
+</div>
+<div class="absolute bottom-0 p-6">
+<div class="transition-all duration-300 group-hover:-translate-y-4">
+<h5 class="text-white text-xl font-bold mb-1">Festival de los Faroles</h5>
+<p class="text-slate-200 text-xs mb-4">El cierre del Año Nuevo con luces, acertijos y tangyuan.</p>
+</div>
+<p class="text-white text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300">Celebración que marca el cierre de las festividades del Año Nuevo chino. Las calles se llenan de faroles de colores, muchas veces con acertijos escritos que las personas intentan resolver. También es común comer tangyuan, unas bolitas dulces de arroz que simbolizan la unión familiar. 🏮</p>
+</div>
+
+</div>
+<!-- Festival 4 -->
+<div class="group relative h-80 overflow-hidden rounded-xl bg-slate-200">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" data-alt="Traditional incense burning at a temple" style="background-image: linear-gradient(to top, rgba(0,0,0,0.7), transparent), url('https://lh3.googleusercontent.com/aida-public/AB6AXuCstDHubiukNUjt0i1yWQ0QvHRWknYee6mRyd6ATxhNQB4q_Btaj9fJA7mh4W7vJT1Y_WMTzOU9rJzAGEFYXlZEsB0S5XASaS96yuc4CGpCEVP7Goi42b4zxv8p9vb9v1dg4oJ7e5LBtv35qz7PGReWKAWqjwfzML1xpqDeiWkxpQNhq3ELw-3ISb7AfHQ8QhQcYomE4SKRIbRDfPuSJkahjSYMhBdbq63Sw96716lNgBaAfyG8Dy9DcdVoNHOkkFfmlb7zA6N5_Px9');">
+</div>
+<div class="absolute bottom-0 p-6">
+<div class="transition-all duration-300 group-hover:-translate-y-4">
+<h5 class="text-white text-xl font-bold mb-1">Festival Qingming</h5>
+<p class="text-slate-200 text-xs mb-4">Día de limpieza de tumbas y respeto por los antepasados.</p>
+</div>
+<p class="text-white text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-300">Conocido como el Día de Limpieza de Tumbas, es una tradición en la que las familias visitan los sepulcros de sus antepasados para limpiarlos, dejar ofrendas y rendirles respeto. Este festival resalta la importancia de honrar la memoria familiar y las tradiciones. 🌿</p>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-primary/5 dark:bg-background-dark/80 border-t border-primary/10 py-12 px-6 md:px-20">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 text-primary mb-6">
+<span class="material-symbols-outlined text-3xl">temple_buddhist</span>
+<h2 class="text-slate-900 dark:text-slate-100 text-xl font-bold tracking-tight">Cultura China</h2>
+</div>
+</div>
+
+
+</div>
+
+</footer>
+</div>
+</div>
+</body></html>
